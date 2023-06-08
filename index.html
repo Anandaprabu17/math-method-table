@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
+
+        table {
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Mthod</th>
+            <th>Operation</th>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <th rowspan="5">abs()</th>
+            <td rowspan="5">The method returns the absolute value of a number.</td>
+            <td>let a = Math.abs(79.99);<br>
+                document.write(a);</td>
+            <td>79.99</td>
+        </tr>
+        <tr>
+            <td>let a = Math.abs(-79.25);<br>
+                document.write(a);</td>
+            <td>79.25</td>
+        </tr>
+        <tr>
+            <td>let a = Math.abs(0);<br>
+                document.write(a);</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>let a = Math.abs(null);<br>
+                document.write(a);</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>let a = Math.abs("anand");<br>
+                document.write(a);</td>
+            <td>NaN</td>
+        </tr>
+        <tr>
+            <th rowspan="3">round()</th>
+            <td rowspan="3">The method rounds a number to the nearest integer.</td>
+            <td>let a = Math.round(7.3);<br>
+                document.write(a);</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>let a = Math.round(7.6);<br>
+                document.write(a);</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>let a = Math.round("hey");<br>
+                document.write(a);</td>
+            <td>NaN</td>
+        </tr>
+        <tr>
+            <th rowspan="3">floor()</th>
+            <td rowspan="3">The method rounds a number DOWN to the nearest integer.</td>
+            <td>let a = Math.floor(7.3);<br>
+                document.write(a);</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>let a = Math.floor(1.6);<br>
+                document.write(a);</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>let a = Math.floor(-7.3);><br>
+                document.write(a);</td>
+            <td>-8</td>
+        </tr>
+        <tr>
+            <th rowspan="3">ceil()</th>
+            <td rowspan="3">The method rounds a number rounded UP to the nearest integer.</td>
+            <td>let a = Math.ceil(7.3);<br>
+                document.write(a);</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>let a = Math.ceil(1.6);<br>
+                document.write(a);</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>let a = Math.ceil(-7.3);<br>
+                document.write(a);</td>
+            <td>-7</td>
+        </tr>
+        <tr>
+            <th rowspan="3">random()</th>
+            <td rowspan="3">
+                The method returns a random number from 0 (inclusive) up to but not including 1 (exclusive).</td>
+            <td>let x = Math.random(5);<br>
+                document.write(x);</td>
+            <td>0.9138286081495883</td>
+        </tr>
+        <tr>
+            <td>let x = Math.random() * 10;<br>
+                document.write(x);</td>
+            <td>4.5444388851157385</td>
+        </tr>
+        <tr>
+            <td>let x = Math.round(Math.random() * 10);<br>
+                document.write(x);</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th rowspan="3">sign()</th>
+            <td rowspan="3">If the number is positive, this method returns 1.<br>
+                If the number is negative, it returns -1.<br>
+                If the number is zero, it returns 0.</td>
+            <td>let x = Math.sign(true);<br>
+                document.write(x);</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>let x = Math.sign(false);<br>
+                document.write(x);</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>let x = Math.sign(-5);<br>
+                document.write(x);</td>
+            <td>-1</td>
+        </tr>
+        <tr>
+            <th rowspan="2">cbrt()</th>
+            <td rowspan="2">The method returns the cubic root of a number.</td>
+            <td>let x = Math.cbrt(49);<br>
+                document.write(x);</td>
+            <td>3.6593057100229713</td>
+        </tr>
+        <tr>
+            <td>let x = Math.cbrt(-23);<br>
+                document.write(x)</td>
+            <td>-2.8438669798515654</td>
+        </tr>
+        <tr>
+            <th rowspan="2">sqrt()</th>
+            <td rowspan="2"> The method returns the square root of a number.</td>
+            <td>let x = Math.sqrt(49);<br>
+                document.write(x);</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>let x = Math.sqrt(-25);<br>
+                document.write(x)</td>
+            <td>NaN</td>
+        </tr>
+        <tr>
+            <th rowspan="3">min()</th>
+            <td rowspan="3">The method returns the number with the lowest value.</td>
+            <td>let a = Math.min(0, 150, 30, 20, 38);<br>
+                document.write(a);</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>let a = Math.min(0, -150, -30, -20, -38);<br>
+                document.write(a);</td>
+            <td>-150</td>
+        </tr>
+        <tr>
+            <td>let a = Math.min("anand", "martin", "murugan", "guru", "praveen");<br>
+                document.write(a);</td>
+            <td>NaN</td>
+        </tr>
+        <tr>
+            <th rowspan="2">max()</th>
+            <td rowspan="2">The method returns the number with the highest value.</td>
+            <td>let a = Math.max(0, 150, 30, 20, 38);<br>
+                document.write(a);</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>let a = Math.max(0, -150, -30, -20, -38);<br>
+                document.write(a);</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th rowspan="3">trunc()</th>
+            <td rowspan="3">method returns the integer part of a number.
+                The Math.trunc() method removes the decimals (does NOT round the number).
+            </td>
+            <td>let x = Math.trunc(854.76);<br>
+                document.write(x);</td>
+            <td>854</td>
+        </tr>
+        <tr>
+            <td>let x = Math.trunc(true);<br>
+                document.write(x);</td>
+            <td>1
+            </td>
+        </tr>
+        <tr>
+            <td>let x = Math.trunc(-12.22);<br>
+                document.write(x);</td>
+            <td>-12</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
